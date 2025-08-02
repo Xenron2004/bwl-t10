@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --rspl-maroon: #3B0000;
+  --rspl-charcoal: #121212;
+  --rspl-gold: #FFD700;
+  --rspl-orange: #F7941D;
+}
+
+@layer base {
+  body {
+    @apply bg-gray-900 text-white;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-yellow-400 hover:bg-yellow-500 text-black font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105;
+  }
+  
+  .btn-secondary {
+    @apply bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105;
+  }
+
+  .golden-ticket {
+    background: linear-gradient(135deg, #FFD700 0%, #FFA500 50%, #FF8C00 100%);
+    box-shadow: 0 20px 40px rgba(255, 215, 0, 0.3);
+  }
+
+  .cricket-bg {
+    background-image: url('https://images.pexels.com/photos/1661950/pexels-photo-1661950.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+}
+
+.hero-gradient {
+  background: linear-gradient(135deg, rgba(18, 18, 18, 0.95) 0%, rgba(59, 0, 0, 0.85) 100%);
+}
+
+.team-card {
+  background: linear-gradient(145deg, #1f2937 0%, #111827 100%);
+  transition: all 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(255, 215, 0, 0.2);
+}

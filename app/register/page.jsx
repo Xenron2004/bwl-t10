@@ -196,7 +196,7 @@ export default function Register() {
               <div className="w-16 h-16 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-black font-bold text-2xl">R</span>
               </div>
-              <h2 className="text-3xl font-bold text-white">Join RSPL</h2>
+              <h2 className="text-3xl font-bold text-white">Join BWL</h2>
               <p className="text-gray-400 mt-2">
                 Register for Bharat Warriors League
               </p>

@@ -102,27 +102,27 @@ export default function Register() {
     setFormData((prev) => ({ ...prev, district: "" }));
   }, [formData.state]);
 
-  const isFormValid = () => {
-    return (
-      formData.firstName &&
-      formData.lastName &&
-      formData.mobile &&
-      formData.email &&
-      formData.dateOfBirth &&
-      formData.state &&
-      formData.district &&
-      formData.trialCity &&
-      formData.playingRole &&
-      formData.battingStyle &&
-      formData.battingHandedness &&
-      formData.bowlingStyle &&
-      formData.battingOrder &&
-      formData.password &&
-      formData.confirmPassword &&
-      formData.password === formData.confirmPassword &&
-      formData.agreeToTerms
-    );
-  };
+  // const isFormValid = () => {
+  //   return (
+  //     formData.firstName &&
+  //     formData.lastName &&
+  //     formData.mobile &&
+  //     formData.email &&
+  //     formData.dateOfBirth &&
+  //     formData.state &&
+  //     formData.district &&
+  //     formData.trialCity &&
+  //     formData.playingRole &&
+  //     formData.battingStyle &&
+  //     formData.battingHandedness &&
+  //     formData.bowlingStyle &&
+  //     formData.battingOrder &&
+  //     formData.password &&
+  //     formData.confirmPassword &&
+  //     formData.password === formData.confirmPassword &&
+  //     formData.agreeToTerms
+  //   );
+  // };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -586,7 +586,7 @@ export default function Register() {
               </div>
 
               {/* Submit Button */}
-              {/* <button
+              <button
                 type="submit"
                 disabled={loading}
                 className="w-full btn-primary py-4 text-lg font-semibold disabled:opacity-50 disabled:cursor-not-allowed"
@@ -599,14 +599,14 @@ export default function Register() {
                 ) : (
                   "Register & Pay Now"
                 )}
-              </button> */}
-              <button
+              </button>
+              {/* <button
                 type="submit"
                 disabled={!isFormValid() || loading}
                 className="w-full py-3 bg-yellow-500 hover:bg-yellow-600 text-black font-semibold rounded-lg disabled:opacity-40"
               >
                 {loading ? "Processing..." : "Register & Pay Now"}
-              </button>
+              </button> */}
             </form>
 
             {/* Login Link */}

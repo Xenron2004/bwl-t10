@@ -1,5 +1,5 @@
-import Link from 'next/link';
-import { FiMail, FiPhone, FiMapPin } from 'react-icons/fi';
+import Link from "next/link";
+import { FiMail, FiPhone, FiMapPin } from "react-icons/fi";
 
 export default function Footer() {
   return (
@@ -15,7 +15,7 @@ export default function Footer() {
               <span className="text-xl font-bold text-yellow-400">RSPL</span>
             </div>
             <p className="text-gray-400 text-sm">
-              Rajasthan State Premier League - Where cricket dreams come true.
+              Bharat Warriors League - Where cricket dreams come true.
             </p>
           </div>
 
@@ -23,10 +23,38 @@ export default function Footer() {
           <div>
             <h3 className="text-white font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              <li><Link href="/#teams" className="text-gray-400 hover:text-yellow-400 transition-colors">Teams</Link></li>
-              <li><Link href="/about" className="text-gray-400 hover:text-yellow-400 transition-colors">About Us</Link></li>
-              <li><Link href="/guidelines" className="text-gray-400 hover:text-yellow-400 transition-colors">Guidelines</Link></li>
-              <li><Link href="/contact" className="text-gray-400 hover:text-yellow-400 transition-colors">Contact</Link></li>
+              <li>
+                <Link
+                  href="/#teams"
+                  className="text-gray-400 hover:text-yellow-400 transition-colors"
+                >
+                  Teams
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/about"
+                  className="text-gray-400 hover:text-yellow-400 transition-colors"
+                >
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/guidelines"
+                  className="text-gray-400 hover:text-yellow-400 transition-colors"
+                >
+                  Guidelines
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/contact"
+                  className="text-gray-400 hover:text-yellow-400 transition-colors"
+                >
+                  Contact
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -34,9 +62,30 @@ export default function Footer() {
           <div>
             <h3 className="text-white font-semibold mb-4">Legal</h3>
             <ul className="space-y-2">
-              <li><Link href="/privacy" className="text-gray-400 hover:text-yellow-400 transition-colors">Privacy Policy</Link></li>
-              <li><Link href="/terms" className="text-gray-400 hover:text-yellow-400 transition-colors">Terms & Conditions</Link></li>
-              <li><Link href="/refund" className="text-gray-400 hover:text-yellow-400 transition-colors">Refund Policy</Link></li>
+              <li>
+                <Link
+                  href="/privacy"
+                  className="text-gray-400 hover:text-yellow-400 transition-colors"
+                >
+                  Privacy Policy
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/terms"
+                  className="text-gray-400 hover:text-yellow-400 transition-colors"
+                >
+                  Terms & Conditions
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/refund"
+                  className="text-gray-400 hover:text-yellow-400 transition-colors"
+                >
+                  Refund Policy
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -62,7 +111,7 @@ export default function Footer() {
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
           <p className="text-gray-400">
-            © 2024 Rajasthan State Premier League. All rights reserved.
+            © 2025 Bharat Warriors League. All rights reserved.
           </p>
         </div>
       </div>

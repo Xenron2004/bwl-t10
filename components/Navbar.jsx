@@ -39,12 +39,12 @@ export default function Navbar() {
             >
               Teams
             </Link>
-            <Link
+            {/* <Link
               href="/about"
               className="text-white hover:text-yellow-400 transition-colors"
             >
               About
-            </Link>
+            </Link> */}
             <Link
               href="/contact"
               className="text-white hover:text-yellow-400 transition-colors"
